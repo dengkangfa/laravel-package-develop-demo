@@ -1,18 +1,21 @@
 {
-    "name": "dengkangfa/hasher",
-    "description": "md5 support in laravel",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "dengkangfa",
-            "email": "1316107553@qq.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Dengkangfa\\Hasher\\": "src/"
-        }
+  "name": "dengkangfa/hasher",
+  "description": "md5 support in laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dengkangfa",
+      "email": "1316107553@qq.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dengkangfa\\Hasher\\": "src/"
+    }
+  }
 }
