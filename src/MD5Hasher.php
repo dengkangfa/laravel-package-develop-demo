@@ -13,9 +13,9 @@ class MD5Hasher
      * @param array $options
      * @return bool
      */
-    public function make($value, array $options = []) : string
+    public function make($value, array $options = [])
     {
-        $salt = $options['salt'] ?? '';
+        $salt = isset($options['salt']) ? $options['salt'] : '';
 
         return hash('md5', $value . $salt);
     }
@@ -26,9 +26,9 @@ class MD5Hasher
      * @param array $options
      * @return bool
      */
-    public function check($value, $hashValue, array $options = []) : bool
+    public function check($value, $hashValue, array $options = [])
     {
-        $salt = $options['salt'] ?? '';
+        $salt = isset($options['salt']) ? $options['salt'] : '';
 
         return hash('md5', $value . $salt) === $hashValue;
     }
