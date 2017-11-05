@@ -6,12 +6,16 @@ namespace Dengkangfa\Hasher;
  * Class MD5Hasher
  * @package Dengkangfa\Hasher
  */
+/**
+ * Class MD5Hasher
+ * @package Dengkangfa\Hasher
+ */
 class MD5Hasher
 {
     /**
      * @param $value
      * @param array $options
-     * @return bool
+     * @return string
      */
     public function make($value, array $options = [])
     {
